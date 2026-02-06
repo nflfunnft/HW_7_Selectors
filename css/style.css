@@ -89,6 +89,28 @@ main {
     background: #625E77;
 }
 
+/* :before псевдоелемент - біла лінія зверху при hover */
+.list-item:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #ffffff66;
+}
+
+/* :after псевдоелемент - біла лінія знизу при hover */
+.list-item:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #ffffff66;
+}
+
 .item-text {
     display: inline-block;
     vertical-align: middle;
