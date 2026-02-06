@@ -58,6 +58,42 @@ main {
     overflow: hidden;
 }
 
+/* Селектор за класом для елементів списку */
+.list-item {
+    display: block;
+    font-size: 0;
+    padding: 18px 20px;
+    cursor: pointer;
+    position: relative;
+    transition: all .1s ease-in;
+    background: #78829180;
+    border-bottom: 1px solid #ffffff0d;
+}
+
+/* Селектор сусідів "+" - додає відступ між елементами */
+.list-item+.list-item {
+    margin-top: 0;
+}
+
+.item-text {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 35px);
+    /* 20px чекбокс + 15px margin-right */
+    color: #ffffffe6;
+    font-size: 16px;
+    flex-grow: 1;
+    transition: all .1s ease-in;
+}
+
+/* Селектор за елементом em для підказок */
+em {
+    font-style: italic;
+    color: #ffffff80;
+    font-size: 13px;
+    margin-left: 8px;
+}
+
 /* Селектор за елементом footer */
 footer {
     text-align: center;
