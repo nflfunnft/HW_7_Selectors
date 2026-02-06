@@ -24,8 +24,69 @@ main {
     padding-bottom: 45px;
 }
 
+.header {
+    text-align: center;
+    background: #4A4F56;
+    padding-top: 19px;
+    padding-bottom: 12px;
+}
+
+.title {
+    color: #FF8984;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    color: #FF8984;
+    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.shopping-list {
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.list-container {
+    background: #6473824d;
+    max-width: 534px;
+    margin: 0 auto; /* центрування по горизонталі */
+    overflow: hidden;
+}
+
 /* Селектор за елементом footer */
 footer {
     text-align: center;
     margin: 0;
+}
+
+/* Селектор за класом для кнопки */
+.btn-appetit {
+    display: block;
+    margin: 0 auto;
+    background-color: #4A4F56;
+    color: #FF8984;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    transition: all .1s ease-in;
+    font-weight: 600;
+    width: 534px;
+}
+
+/* :hover для кнопки */
+.btn-appetit:hover {
+    background: #3a5e4f;
+    transform: translateY(-2px);
+}
+
+/* :active для кнопки */
+.btn-appetit:active {
+    transform: translateY(0);
 }
