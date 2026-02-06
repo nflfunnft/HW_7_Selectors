@@ -75,6 +75,20 @@ main {
     margin-top: 0;
 }
 
+/* :nth-child - зеброва розмітка для кольорів */
+.list-item:nth-child(odd) {
+    background: #88839E;
+}
+
+.list-item:nth-child(even) {
+    background: #7A7593;
+}
+
+/* :hover - ефект при наведенні */
+.list-item:hover {
+    background: #625E77;
+}
+
 .item-text {
     display: inline-block;
     vertical-align: middle;
