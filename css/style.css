@@ -111,6 +111,63 @@ main {
     background: #ffffff66;
 }
 
+/* Стилі для чекбоксу */
+.checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffffff66;
+    border-radius: 3px;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: all .1s ease-in;
+    background: #ffffff1a;
+}
+
+/* :hover для чекбоксу */
+.checkbox:hover {
+    border-color: #ffffff99;
+    background: #ffffff26;
+}
+
+/* :checked - відмічений чекбокс */
+.checkbox:checked {
+    border-color: #ffffff99;
+    background: #ffffff;
+}
+
+/* :before для галочки у відміченому чекбоксі */
+.checkbox:checked::before {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* :active - ефект натискання на чекбокс */
+.checkbox:active {
+    transform: scale(0.95);
+}
+
+/* :checked + селектор сусідів - червоний фон при відмітці */
+.checkbox:checked+.item-text {
+    text-decoration: line-through;
+    color: #ffffff80;
+}
+
+/* Зміна фону всього елемента при checked */
+.list-item:has(.checkbox:active) {
+    background: #e5737380;
+    /* !important не потрібний бо нижче за odd-even */
+}
+
 .item-text {
     display: inline-block;
     vertical-align: middle;
